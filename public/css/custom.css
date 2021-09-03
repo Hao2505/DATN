@@ -1,0 +1,240 @@
+.tts-col-box-item .tts-item-book .form-add-to-cart{
+    display: none;
+    position: absolute;
+    justify-content: space-around;
+    width: 100%; 
+    bottom: 10%;
+    transition: transform 300ms ease-out;
+}
+
+.tts-col-box-item .tts-item-book:hover .form-add-to-cart{
+    display: flex;
+    transition: transform 300ms ease-out;
+}
+
+#tts-menu-sticky-top.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#tts-menu-sticky-top.sticky .navbar .tts-logo{
+    height: 65px;
+    transition: 0.5s;
+}
+
+/* payment */
+.tts-box-payment {
+    padding: 50px 0px 80px;
+}
+.tts-box-payment .tts-make-center {
+    width: 100%;
+    margin: auto;
+}
+@media (min-width: 768px) {
+    .tts-box-payment .tts-make-center {
+        width: 80%;
+    }
+}
+.tts-box-payment .tts-make-center .tts-title-payment {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.tts-box-payment .tts-make-center .tts-title-payment h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: black;
+    margin-bottom: 9px;
+}
+.tts-box-payment .tts-make-center .tts-title-payment hr {
+    width: 30%;
+    border-top: 1px solid black;
+    margin: 0px auto;
+}
+.tts-box-payment .tts-make-center form label {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.tts-box-payment .tts-make-center form .tts-text-primary-color {
+    color: black;
+}
+.tts-box-payment .tts-make-center form input[type="text"] {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0;
+    background-clip: padding-box;
+    font-size: 16px;
+    padding: 0px 30px;
+}
+.tts-box-payment .tts-make-center form input[type="text"]:focus {
+    outline: unset;
+}
+.tts-box-payment .tts-make-center form p {
+    font-size: 16px;
+    display: block;
+}
+.tts-box-payment .tts-make-center form input[type="radio"] {
+    display: none;
+}
+.tts-box-payment .tts-make-center form .tts-label-radio {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tts-box-payment .tts-make-center form .tts-label-radio::before {
+    content: "";
+    border: 1.5px solid #707070;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-clip: padding-box;
+    margin: -6px 0px;
+    margin-right: 8px;
+    margin-top: -8.5px;
+}
+.tts-box-payment .tts-make-center form .tts-label-radio::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: rgba(0, 170, 74, 0);
+    border-radius: 50%;
+    background-clip: padding-box;
+    left: 2px;
+    top: 2px;
+    transition: all 0.4s;
+}
+@media (min-width: 992px) {
+    .tts-box-payment .tts-make-center form .tts-label-radio::after {
+        top: 2px;
+    }
+}
+.tts-box-payment .tts-make-center form input[type="radio"]:checked + .tts-label-radio::after {
+    background-color: #707070;
+    border: 1.5px solid #707070;
+}
+.tts-box-payment .tts-make-center form .tts-box-border {
+    border: 1px solid black;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.tts-box-payment .tts-make-center form .tts-box-border p {
+    font-size: 16px;
+    line-height: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+.tts-box-payment .tts-make-center form .tts-box-border .tts-select-custom {
+    position: relative;
+}
+.tts-box-payment .tts-make-center form .tts-box-border .tts-select-custom select {
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0;
+    background-clip: padding-box;
+    margin-bottom: 20px;
+    background-color: unset;
+    padding: 0px 40px 0px 20px;
+    appearance: none;
+}
+.tts-box-payment .tts-make-center form .tts-box-border .tts-select-custom select:focus {
+    outline: unset;
+}
+.tts-box-payment .tts-make-center form .tts-box-border .tts-select-custom .tts-custom-arrow {
+    top: 35%;
+    right: 35px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    position: absolute;
+    pointer-events: none;
+}
+.tts-box-payment .tts-make-center form .tts-border-last {
+    padding-bottom: 52px;
+}
+.tts-box-payment .tts-make-center form .tts-box-btn {
+    padding-top: 50px;
+}
+.tts-box-payment .tts-make-center form .tts-box-btn button {
+    height: 50px;
+    border: 1px solid black;
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.tts-box-payment .tts-make-center form .tts-box-btn .tts-btn-go-cart {
+    background-color: unset;
+    color: black;
+    -moz-border-radius-topleft: 29px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomleft: 29px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-top-left-radius: 29px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 29px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-top-left-radius: 29px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 29px;
+    border-bottom-right-radius: 0px;
+}
+.tts-box-payment .tts-make-center form .tts-box-btn .tts-btn-go-cart:hover {
+    background-color: #674905;
+    border-color: #674905;
+    color: #fff;
+}
+.tts-box-payment .tts-make-center form .tts-box-btn .tts-btn-order {
+    background-color: #674905;
+    border-left: unset;
+    color: #fff;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 29px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 29px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 29px;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 29px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 29px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 29px;
+}
+.tts-box-payment .tts-make-center form .tts-box-btn .tts-btn-order:hover {
+    background-color: unset;
+    color: black;
+}
+.tts-box-product {
+    border: 1px solid black;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+
+.tts-box-payment .tts-make-center form input[type=email]{
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0;
+    background-clip: padding-box;
+    font-size: 16px;
+    padding: 0px 30px;
+}
+
+.tts-box-payment .tts-make-center form input[type=email]:focus{
+    outline: unset;
+}
+
+.delete_cart{
+    cursor: pointer;
+}
